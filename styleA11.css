@@ -1,1 +1,99 @@
+body{
+    background-color: rgb(189, 215, 238);
+  }
+  #title{
+    font-size: 36px;
+    font-weight: bold;
+    color:rgb(226, 43, 134);
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    right: 100px;
+  }
+  #description{
+    font-size: 18px;
+    color:blueviolet;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    right: 100px;
+    background-color: aquamarine;
+  }
+  .container {
+    width: 375px;
 
+    display: flex;
+      justify-content: center;
+      align-items: center;
+       
+      .button-container .button-container{
+        display:grid;
+        grid-template-columns: repeat(4 ,1fr);
+        gap: 50px;
+        padding:50%;
+    }
+     
+    
+      .calculator-container{
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        position: relative;
+        left: 100%;
+        
+
+      }
+      #result{
+        display: flex;
+       justify-content: flex-end;
+       margin: 20px 0;
+       text-align: right;
+      flex: 1;
+      background-color: darkgray;
+      font-size: 45px;
+      box-shadow: none;
+      width: 330px;
+
+      }
+      result input{
+        text-align: right;
+        flex: 1;
+        background-color: darkgray;
+        font-size: 45px;
+        box-shadow: none;
+
+      }
+      button{
+        border: 0;
+        outline: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        background: transparent;
+        box-shadow: -8px -8px 15px rgba(255,255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+        align-self: center;
+      }
+      .equalTo{
+        
+        width: 150px;
+        height: 60px;
+       
+        color: rgb(239, 250, 250);
+        background-color: aqua;
+        
+      }
+      .delc{
+          color: red;
+      }
+      .oper{
+        color: rgb(0, 140, 255);
+      }
+  }  
